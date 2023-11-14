@@ -1,0 +1,536 @@
+@import "../assets/styles/Global.scss";
+
+main {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  .hero_wrap {
+    width: 100%;
+    height: 800px;
+    padding: 112px 11.458333% 160px 11.458333%; /* 165px/1440 */
+    background: url("../assets/images/desktop/image-hero.jpg") no-repeat;
+    background-position: right;
+    background-size: contain;
+    .hero_img {
+      display: none;
+    }
+    .hero_information {
+      display: flex;
+      flex-direction: column;
+      h1 {
+        color: $textblack;
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 88px; /* 110% */
+        max-width: 730px;
+        margin-bottom: 39px;
+      }
+      p {
+        color: $textblack;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px; /* 177.778% */
+        max-width: 540px;
+        margin-bottom: 48px;
+      }
+      a {
+        width: 177px;
+        height: 72px;
+        color: $white;
+        background: $red;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background 0.5s ease;
+      }
+      a:hover {
+        background: $hoverRedBtn;
+      }
+    }
+  }
+  .design_wrap {
+    height: 984px;
+    width: 100%;
+    position: relative;
+    .design_img {
+      height: 984px;
+      width: 100%;
+      background: url("../assets/images/desktop/image-strategic.jpg") no-repeat;
+      background-position: left;
+      background-size: contain;
+    }
+    .design_information {
+      height: 784px;
+      width: 705px;
+      padding: 200px 106px 200px 154px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: $bgBlack;
+      display: flex;
+      flex-direction: column;
+      .pattern {
+        position: absolute;
+        top: 234.4px;
+        left: -67px;
+      }
+      h1 {
+        color: $white;
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 64px;
+        max-width: 410px;
+        margin-bottom: 43px;
+        span {
+          color: $red;
+        }
+      }
+      p {
+        color: $white;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+        margin-bottom: 48px;
+      }
+      a {
+        width: 124px;
+        position: relative;
+        color: $red;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        transition: color 0.5s ease;
+      }
+      a::after {
+        position: absolute;
+        content: "";
+        bottom: -8px;
+        display: block;
+        height: 2px;
+        width: 100%;
+        background: $red;
+        transition: background 0.5s ease;
+      }
+      a:hover {
+        color: $hoverRedBtn;
+      }
+      a:hover::after {
+        background: $hoverRedBtn;
+      }
+    }
+  }
+  .services_wrap {
+    padding: 200px 11.458333%; /* 165px/1440 */
+    height: 900px;
+    width: 100%;
+    position: relative;
+    background: $white;
+    h1 {
+      color: $textblack;
+      font-size: 56px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 64px; /* 114.286% */
+      max-width: 540px;
+      position: relative;
+      z-index: 200;
+    }
+    .services_information {
+      position: absolute;
+      width: 62.152778%; /* 895px/1440 */
+      height: 1100px;
+      background: $red;
+      bottom: 0;
+      right: 0;
+      padding: 200px 106px 0 285px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 56px;
+      .element {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        max-width: 504px;
+        gap: 24px;
+        span {
+          position: absolute;
+          font-size: 80px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: 88px;
+          color: $hoverRedBtn;
+          left: -60px;
+          top: 0;
+          opacity: 0.5;
+        }
+        h4 {
+          position: relative;
+          z-index: 3;
+          color: $white;
+          margin-top: 44px;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: 32px;
+        }
+        p {
+          color: $white;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 32px;
+          max-width: 445px;
+        }
+      }
+    }
+  }
+  .slider_wrap {
+    height: 728px;
+    width: 100%;
+    background: $white;
+    position: relative;
+    .controll {
+      height: 528px;
+      width: 51.041667%; /* 735px/1440 */
+      padding: 152px 8.680556% 152px 11.458333%; /* 125px/1440 */ /* 165px/1440 */
+      position: absolute;
+      z-index: 999;
+      top: 0;
+      left: 0;
+      background: $bgBlack;
+      display: flex;
+      flex-direction: column;
+      gap: 51px;
+      .pattern{
+        position: absolute;
+        right: -67px;
+        top: 186px;
+      }
+      h1 {
+        color: $white;
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 64px; /* 114.286% */
+      }
+      .btn_wrap{
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        svg{
+          cursor: pointer;
+          g{
+            transition: stroke 0.5s ease;
+          }
+        }
+        svg:hover g{
+          stroke: $hoverRedBtn;
+        }
+      }
+    }
+    .slides_wrap{
+      width: 100%;
+      height: 728px;
+      display: block;
+      overflow: hidden;
+      .slide{
+        width: 100%;
+        height: 728px;
+        display: none;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: 68px 154px;
+        position: relative;
+        transition: opacity 0.5s ease;
+        img{
+          height: 728px;
+          position: absolute;
+          right: 0;
+          top: 0;
+          z-index: 3;
+        }
+        .information{
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          position: relative;
+          z-index: 4;
+          h4{
+            color: $white;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 32px
+          }
+          p{
+            color: $white;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px;
+          }
+        }
+      }
+      .slide.active{
+        display: flex;
+      }
+    }
+  }
+}
+@media screen and (max-width: 968px) {
+  main {
+    .hero_wrap {
+      height: 606px;
+      padding: 77px 5.078125% 150px 5.078125%; /* 39px/768 */
+      background: url("../assets/images/tablet/image-hero.jpg") no-repeat;
+      background-position: right;
+      background-size: contain;
+      .hero_information {
+        h1 {
+          font-size: 56px;
+          line-height: 56px;
+          margin-bottom: 19px;
+          max-width: 398px;
+        }
+        p {
+          font-size: 15px;
+          line-height: 25px; /* 166.667% */
+          margin-bottom: 32px;
+          max-width: 398px;
+        }
+      }
+    }
+    .design_wrap {
+      height: 658px;
+      .design_img {
+        height: 658px;
+        background: url("../assets/images/tablet/image-strategic.jpg") no-repeat;
+        background-position: left;
+        background-size: contain;
+      }
+      .design_information {
+        height: 538px;
+        width: 390px;
+        padding: 120px 40px 120px 69px;
+        .pattern {
+          top: 135px;
+          transform: scale(0.48);
+        }
+        h1 {
+          font-size: 32px;
+          line-height: 40px;
+          max-width: 251px;
+          margin-bottom: 32px;
+        }
+        p {
+          font-size: 15px;
+          line-height: 25px;
+          max-width: 281px;
+          margin-bottom: 32px;
+        }
+        a {
+          width: 103px;
+          font-size: 15px;
+        }
+      }
+    }
+    .services_wrap {
+      height: 677px;
+      padding: 126px 5.078125%; /* 39px/768 */
+      h1 {
+        font-size: 32px;
+        line-height: 40px;
+        max-width: 281px;
+      }
+      .services_information {
+        height: 797px;
+        padding: 120px 40px 0 59px;
+        gap: 40px;
+        .element {
+          gap: 15px;
+          max-width: 365px;
+          span {
+            left: -20px;
+          }
+          h4 {
+            font-size: 15px;
+            line-height: 25px;
+          }
+          p {
+            font-size: 15px;
+            line-height: 25px;
+            max-width: 339px;
+          }
+        }
+      }
+    }
+    .slider_wrap{
+      height: 472px;
+      .controll{
+        height: 352px;
+        width: 50.78125%; /* 390px/768 */
+        padding: 100px 5.078125%; /* 39px/768 */
+        gap: 32px;
+        .pattern{
+          transform: scale(0.48);
+          top: 116px;
+        }
+        h1{
+          font-size: 32px;
+line-height: 40px;
+        }
+      }
+      .slides_wrap{
+        height: 472px;
+        .slide{
+          height: 472px;
+          padding: 45px 5.208333%; /* 40px/768 */
+          img{
+            height: 472px;
+          }
+          .information{
+            h4{
+              font-size: 15px;
+line-height: 20px;
+            }
+            p{
+              font-size: 15px;
+line-height: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  main {
+    .hero_wrap {
+      height: auto;
+      padding: 0 0 96px 0;
+      background: $white;
+      display: flex;
+      flex-direction: column;
+      .hero_img {
+        display: block;
+        width: 100%;
+        height: 200px;
+        background: url("../assets/images/mobile/image-hero.jpg") no-repeat;
+        background-size: cover;
+        margin-bottom: 56px;
+      }
+      .hero_information {
+        padding: 0 6.4%; /* 24px/375px */
+        h1 {
+          font-size: 40px;
+          line-height: 40px;
+          margin-bottom: 15px;
+          max-width: 327px;
+        }
+        p {
+          margin-bottom: 40px;
+          max-width: 327px;
+        }
+      }
+    }
+    .design_wrap {
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      .design_img {
+        height: 200px;
+        background: url("../assets/images/mobile/image-strategic.jpg") no-repeat;
+        background-size: cover;
+      }
+      .design_information {
+        position: relative;
+        height: 377px;
+        width: 100%;
+        padding: 72px 24px 72px 24px;
+        .pattern {
+          top: -28.5px;
+          left: -10px;
+        }
+        h1 {
+          max-width: 327px;
+          font-size: 32px;
+          line-height: 32px;
+          margin-bottom: 24px;
+        }
+        p {
+          max-width: 327px;
+          margin-bottom: 40px;
+        }
+      }
+    }
+    .services_wrap {
+      height: auto;
+      width: 100%;
+      padding: 0;
+      background: $red;
+      h1 {
+        color: $white;
+        max-width: 327px;
+        margin: 96px 10.666667% 0 10.666667%; /* 40px/375 */
+      }
+      .services_information {
+        position: relative;
+        height: auto;
+        width: 100%;
+        padding: 49px 10.666667% 96px 10.666667%; /* 40px/375 */
+        align-items: flex-start;
+        .element {
+          max-width: 365px;
+          span {
+            left: -20px;
+          }
+          h4 {
+            font-size: 15px;
+            line-height: 25px;
+          }
+          p {
+            font-size: 15px;
+            line-height: 25px;
+            max-width: 311px;
+          }
+        }
+      }
+    }
+    .slider_wrap{
+      height: auto;
+      display: flex;
+      flex-direction: column-reverse;
+      .controll{
+        width: 100%;
+        height: 272px;
+        position: relative;
+        gap: 24px;
+        padding: 64px 6.4%; /* 24px/375 */
+        .pattern{
+          display: none;
+        }
+      }
+      .slides_wrap{
+        height: 404px;
+        .slide{
+          height: 404px;
+          padding: 35px 8.533333%; /* 32px/375 */
+          img{
+            height: 404px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+@import "../assets/styles/Global.scss";
+
+footer {
+  position: relative;
+  width: 100%;
+  height: 368px;
+  padding: 0 11.458333%; /* 165px/1440 */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  .pattern {
+    position: absolute;
+    top: 154px;
+    left: -67px;
+  }
+  h1 {
+    color: $textblack;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 64px; /* 114.286% */
+    max-width: 635px;
+  }
+  a {
+    width: 199px;
+    height: 64px;
+    color: $white;
+    background: $red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.5s ease;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+  a:hover {
+    background: $hoverRedBtn;
+  }
+}
+@media screen and (max-width: 968px) {
+  footer {
+    height: 251px;
+    padding: 0 5.078125%; /* 39px/768 */
+
+    .pattern {
+      display: none;
+    }
+    h1 {
+      font-size: 32px;
+      line-height: 40px;
+      max-width: 398px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 47px;
+      height: 391px;
+      padding: 100px 6.4%; /* 24px/375 */
+      h1{
+        max-width: 327px;
+        
+      }
+    }
+  }
+  
